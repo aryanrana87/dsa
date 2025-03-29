@@ -66,6 +66,26 @@
 #             else:
 #                 s+=i
 #                 d.append(i)
-print(11)
-print(11,end=" ")
-print(11)
+# print(11)
+# print(11,end=" ")
+# print(11)
+# s = input()
+# t = input()
+
+# if s == t[::-1]:
+#     print("YES")
+# else:
+#     print("NO")
+s=input()
+d=0
+t=0
+for i in s:
+    if i == i.upper():
+        d+=1
+    else:
+        t+=1
+if d>t:
+    print(s.upper())
+else:
+    print(s.lower())
+    
