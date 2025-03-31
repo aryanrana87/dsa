@@ -76,16 +76,23 @@
 #     print("YES")
 # else:
 #     print("NO")
-s=input()
-d=0
-t=0
-for i in s:
-    if i == i.upper():
-        d+=1
-    else:
-        t+=1
-if d>t:
-    print(s.upper())
+# s=input()
+# d=0
+# t=0
+# for i in s:
+#     if i == i.upper():
+#         d+=1
+#     else:
+#         t+=1
+# if d>t:
+#     print(s.upper())
+# else:
+#     print(s.lower())
+s1 = input().lower()
+s2 = input().lower()
+if s1 < s2:
+    print(-1)
+elif s1 > s2:
+    print(1)
 else:
-    print(s.lower())
-    
+    print(0)
