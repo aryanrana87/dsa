@@ -96,37 +96,52 @@
 #     print(1)
 # else:
 #     print(0)
-class Dog:
-    def __init__(self,intro,name,age,breed,gender,colour,owner):
-        self.name = name
-        self.age = age
-        self.breed = breed
-        self.gender = gender
-        self.colour = colour
-        self.owner = owner
-        print("i am initialized")
-    def introduce(self):
-        print(f"i am {self.name} and my age is {self.friend.name}")
-    def bark(self):
-        print("woof woof")
-    def Name(self):
-        return self.name
-    def Age(self):
-        return self.age
-    def Breed(self):
-        return self.breed
-    def Gender(self):
-        return self.gender
-    def color(self):
-        return self.colour
-    def Owner(self):
-        return self.owner
+# class Dog:
+#     def __init__(self,intro,name,age,breed,gender,colour,owner):
+#         self.name = name
+#         self.age = age
+#         self.breed = breed
+#         self.gender = gender
+#         self.colour = colour
+#         self.owner = owner
+#         print("i am initialized")
+#     def introduce(self):
+#         print(f"i am {self.name} and my age is {self.friend.name}")
+#     def bark(self):
+#         print("woof woof")
+#     def Name(self):
+#         return self.name
+#     def Age(self):
+#         return self.age
+#     def Breed(self):
+#         return self.breed
+#     def Gender(self):
+#         return self.gender
+#     def color(self):
+#         return self.colour
+#     def Owner(self):
+#         return self.owner
 
     
-bark = Dog("sahil",3,"notdefine","bisexual","Brown","Pommerian")
-print(bark.name)
-print(bark.age)
-print(bark.breed)
-print(bark.gender)
-print(bark.colour)
-print(bark.owner)
+# bark = Dog("sahil",3,"notdefine","bisexual","Brown","Pommerian")
+# print(bark.name)
+# print(bark.age)
+# print(bark.breed)
+# print(bark.gender)
+# print(bark.colour)
+# print(bark.owner)
+t= int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    l,r=0,n-1
+    b=[]
+    for i in range(n):
+        if i%2==0:
+            b.append(a[l])
+            l+=1
+        else:
+            b.append(a[r])
+            r-=1
+            
+    print(*b)
