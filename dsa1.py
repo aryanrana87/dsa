@@ -130,18 +130,34 @@
 # print(bark.gender)
 # print(bark.colour)
 # print(bark.owner)
-t= int(input())
-for i in range(t):
-    n=int(input())
-    a=list(map(int,input().split()))
-    l,r=0,n-1
-    b=[]
-    for i in range(n):
-        if i%2==0:
-            b.append(a[l])
-            l+=1
-        else:
-            b.append(a[r])
-            r-=1
+# t= int(input())
+# for i in range(t):
+#     n=int(input())
+#     a=list(map(int,input().split()))
+#     l,r=0,n-1
+#     b=[]
+#     for i in range(n):
+#         if i%2==0:
+#             b.append(a[l])
+#             l+=1
+#         else:
+#             b.append(a[r])
+#             r-=1
             
-    print(*b)
+#     print(*b)
+a=input().lower()
+b=input().lower()
+# d=a.split()
+# c=b.split()
+x=0
+y=0
+for i in a:
+    x+=ord(i)
+for j in b:
+    y+=ord(j)
+if x==y:
+    print("0")
+elif x>y:
+    print("1")
+else:
+    print("-1")
